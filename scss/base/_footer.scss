@@ -1,0 +1,53 @@
+footer {
+	width: 100%;
+	background-color: #0375B4;
+	font-size: 4px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+
+	p:first-child {
+		padding: .5rem;
+		font-size: 1rem;
+		font-family: 'Bad Script', cursive;
+		color: #FFCE00;
+	}
+
+	div {
+		margin-left: .25rem;
+		color: white;
+	}
+
+	div.footerIcons {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		flex-wrap: wrap;
+		svg {
+			height: 20px;
+			width: 20px;
+			opacity: .5;
+			transition: .8s;
+			cursor: pointer;
+			padding: .5rem;
+			&:hover {
+				transform: scale(1.1);
+				opacity: 1;
+			}
+
+			@media screen and (min-width:400px) {
+				height: 35px;
+				width: 35px;
+			}
+
+			@media screen and (min-width:700px) {
+				height: 50px;
+				width: 50px;
+			}
+			@media screen and (min-width:1000px) {
+				height: 75px;
+				width: 75px;
+			}
+		}
+	}
+}

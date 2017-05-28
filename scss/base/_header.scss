@@ -1,0 +1,50 @@
+header#indexHeader {
+	margin: 0 auto;
+
+	div {
+		width: 80%;
+		margin: 0 auto;
+
+		@media screen and (min-width:600px) {
+				width: 50%;
+			}
+
+		h1 {
+			text-align: center;
+			font-size: 2rem;
+			font-family: 'Bad Script', cursive;
+			padding: 1rem;
+			@media screen and (min-width:600px) {
+				padding: 1.5rem;
+				font-size: 3rem;
+			}
+		}
+	}	
+}
+
+header {
+	width: 100%;
+	background-color: #0375B4;
+	div {
+		text-align: center;
+		
+		h1.smallTitle {
+			font-family: 'Bad Script', cursive;
+			font-size: 1.25rem;
+			padding: 1rem 0;
+		}
+
+		&.headerBorder {
+			border-top: 2px solid white;
+		}
+
+		&:not(.topnav) {
+			color: #FFCE00;
+			margin: 0 auto;
+			width: 300px;
+			@media screen and (min-width: 600px) {
+				margin: 0rem 1rem;
+			}
+		}
+	}
+}
