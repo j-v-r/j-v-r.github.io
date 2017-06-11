@@ -182,7 +182,7 @@ div.container {
     @media screen and (min-width: 600px) {
       div.container h2 {
         font-size: 2rem;
-        margin: .5rem auto; } }
+        margin: 1rem auto; } }
   div.container p {
     font-size: 1.25rem;
     color: #262228; }
@@ -218,7 +218,8 @@ div#content {
 div.topnav {
   background-color: #262228;
   overflow: hidden;
-  padding: 0; }
+  padding: 0;
+  min-width: 100%; }
   div.topnav a {
     float: left;
     display: block;
@@ -254,38 +255,54 @@ div.responsive {
     display: block !important;
     text-align: left; }
 
-div#projectGallery {
-  padding: 0;
+div.gallery {
   width: 100%;
-  margin-top: 2rem; }
-
-div.row {
-  padding: 0;
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
-  width: 100%; }
-  @media screen and (min-width: 600px) {
-    div.row {
-      flex-direction: row; } }
-  div.row > div.column {
-    padding: 0;
-    position: relative;
-    height: 157px;
-    cursor: pointer; }
-    @media screen and (min-width: 600px) {
-      div.row > div.column {
-        margin-left: 1rem;
-        margin-top: 1rem; } }
-  div.row:after {
-    content: '';
-    display: table;
-    clear: both; }
+  flex-direction: row;
+  flex-wrap: wrap; }
+  div.gallery div.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: 1rem auto;
+    text-align: center; }
+    div.gallery div.card div.postDiskus {
+      background-image: url("../dist/imgs/projectImgs/thumbnails/postDiskus.png"); }
+    div.gallery div.card div.templateOne {
+      background-image: url("../dist/imgs/projectImgs/thumbnails/cafeTemplate.png"); }
+    div.gallery div.card div.dashboard {
+      background-image: url("../dist/imgs/projectImgs/thumbnails/dashboard.png"); }
+    div.gallery div.card div.openLibrary {
+      background-image: url("../dist/imgs/projectImgs/thumbnails/ajaxOpenLibrary.png"); }
+    div.gallery div.card div.mediaElementJS {
+      background-image: url("../dist/imgs/projectImgs/thumbnails/mediaElementjs.png"); }
+    div.gallery div.card div.optimization {
+      background-image: url("../dist/imgs/projectImgs/thumbnails/optimization.png"); }
+    div.gallery div.card div.metroInfoApp {
+      background-image: url("../dist/imgs/projectImgs/thumbnails/metroInfo.png"); }
+    div.gallery div.card div.project-image-thumbnail {
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 300px;
+      height: 155px;
+      margin: 0 auto;
+      display: block;
+      cursor: pointer; }
+    div.gallery div.card div.wrapper {
+      padding: 1rem; }
+      div.gallery div.card div.wrapper h3 {
+        margin: .5rem auto;
+        font-family: 'Bad Script', cursive;
+        font-size: 1.5rem;
+        color: #007849; }
+      div.gallery div.card div.wrapper p {
+        margin: .5rem auto;
+        line-height: 1.25rem; }
+
+div.project-image-thumbnail:hover div.overlay {
+  height: 155px; }
 
 div.overlay {
-  position: absolute;
-  bottom: 100%;
+  position: relative;
   left: 0;
   right: 0;
   background-color: rgba(255, 255, 255, 0.9);
@@ -293,12 +310,9 @@ div.overlay {
   width: 300px;
   height: 0;
   margin: 0 auto;
-  transition: .5s ease;
-  cursor: pointer; }
-
-div.column:hover div.overlay {
-  bottom: 0;
-  height: 100%; }
+  transition: 1s ease;
+  cursor: pointer;
+  font-height: 1.5rem; }
 
 div.text {
   white-space: nowrap;
@@ -311,16 +325,6 @@ div.text {
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%); }
 
-div.column {
-  text-align: center;
-  margin-top: 1.5rem; }
-  @media screen and (min-width: 900px) {
-    div.column {
-      margin-top: 0; } }
-  div.column img {
-    width: 300px;
-    border: 1px solid black; }
-
 div.modal {
   display: none;
   position: fixed;
@@ -332,32 +336,12 @@ div.modal {
   height: 100%;
   overflow: auto;
   background-color: rgba(0, 0, 0, 0.85); }
-  div.modal h3 {
-    font-weight: 700;
-    font-size: 1.5rem;
-    color: white;
-    margin-bottom: .25rem; }
-  div.modal a {
-    color: white;
-    display: inline-block; }
-    div.modal a:hover {
-      color: blue; }
-    div.modal a.prev {
-      display: block; }
-    div.modal a.next {
-      display: block; }
-  div.modal p {
-    margin-top: .5rem;
-    font-size: 1.25rem;
-    color: white;
-    line-height: 1.5rem; }
 
 div.modal-content {
   position: relative;
   background-color: #fefefe;
   margin: auto;
   padding: 0;
-  width: 60%;
   max-width: 1200px; }
 
 span.close {
@@ -373,37 +357,11 @@ span.close {
     cursor: pointer; }
 
 div.mySlides {
-  display: none; }
-
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -50px;
-  color: white;
-  font-weight: bold;
-  font-size: 20px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  -webkit-user-select: none; }
-
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px; }
-
-.prev:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.8); }
-
-div.caption-container {
-  line-height: 3rem;
-  text-align: center;
-  padding: 2px 16px;
-  color: white; }
+  display: none;
+  margin: 0 auto;
+  width: inherit; }
+  div.mySlides img {
+    width: 90%; }
 
 div#myModal div.column img {
   display: none; }

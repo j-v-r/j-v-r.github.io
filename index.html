@@ -10,6 +10,13 @@
 </head>
 <body>
 <header id='indexHeader'>
+	<div class="topnav" id="myTopnav">
+	  <a href="index.html">Home</a>
+	  <a href="about.html">About</a>
+	  <a href="projects.html">Projects</a>
+	  <a href="contact.html">Contact</a>
+	  <a href="javascript:void(0);" class="icon" onclick="toggleNav()">&#9776;</a>
+	</div>
 	<div>
 		<h1>John Reardon</h1>
 	</div>
@@ -162,6 +169,15 @@
 	</div>
 </footer>
 <script>
+function toggleNav() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+
 var slideIndex = 0;
 showSlides();
 

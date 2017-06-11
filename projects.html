@@ -27,121 +27,127 @@
 </header>
 <section style="padding-bottom: 1rem;">
   <h2>Projects</h2>
-	<div id='projectGallery'>
-		<div class='row'>
-			<div class='column'>
-				<img src='dist/imgs/projectImgs/thumbnails/postDiskus.png' alt="Post Diskus Thumbnail">
-				<div onclick="openModal();currentSlide(1)" class="overlay">
-    				<div class="text">PostDiskus - jQuery Project
-                              <br>
-                              (Click For More...)</div>
-  				</div>
-			</div>
-      <div class='column'>
-        <img src='dist/imgs/projectImgs/thumbnails/cafeTemplate.png' alt="Cafe Template #1 Thumbnail">
-        <div onclick="openModal();currentSlide(2)" class="overlay">
-            <div class="text">My One Page Template 
-                              <br>
-                              (Click For More...)</div>
-          </div>
+  <div class="gallery">
+    <div class="card">
+      <div class="project-image-thumbnail postDiskus">
+       <div onclick="openModal();currentSlide(1)" class="overlay">
+        <div class="text">(Click to Enlarge...)</div>
       </div>
-			<div class='column'>
-				<img src='dist/imgs/projectImgs/thumbnails/dashboard.png' alt="Dashboard Thumbnail">
-				<div onclick="openModal();currentSlide(3)" class="overlay">
-    				<div class="text">Dashboard Project
-                              <br>
-                              (Click For More...)</div>
-  				</div>
-			</div>
-			<div class='column'>
-				<img src='dist/imgs/projectImgs/thumbnails/ajaxOpenLibrary.png' alt="Ajax Open Library Thumbnail">
-				<div onclick="openModal();currentSlide(4)" class="overlay">
-    				<div class="text">Ajax Project - Open Library
-                              <br>
-                              (Click For More...)</div>
-  				</div>
-			</div>
-			<div class='column'>
-				<img src='dist/imgs/projectImgs/thumbnails/accessibility.png' alt="Accessibility Thumbnail">
-				<div onclick="openModal();currentSlide(5)" class="overlay">
-    				<div class="text">Accessibility Project
-                              <br>
-                              (Click For More...)</div>
-  				</div>
-			</div>
-      <div class='column'>
-        <img src='dist/imgs/projectImgs/thumbnails/mediaElementjs.png' alt="MediaElement.js Thumbnail">
-        <div onclick="openModal();currentSlide(6)" class="overlay">
-            <div class="text">MediaElement.js Project
-                              <br>
-                              (Click For More...)</div>
-          </div>
       </div>
-      <div class='column'>
-        <img src='dist/imgs/projectImgs/thumbnails/optimization.png' alt="Optimization Thumbnail">
-        <div onclick="openModal();currentSlide(7)" class="overlay">
-            <div class="text">Optimization Project
-                              <br>
-                              (Click For More...)</div>
-          </div>
+      <div class="wrapper">
+        <h3>Post Diskus</h3>
+        <p>Post Diskus is one of my early projects. The goal was to build a simple blogging application in which users could post discussion content as well as comment on posted content. Post Diskus was build using HTML, Sass, and jQuery. It was also built using mobile first design principals.</p>
+        <p><a href="https://j-v-r.github.io/postDiskus/" target="_blank">View Live</a></p>
+        <p><a href="https://github.com/j-v-r/postDiskus" target="_blank">View GitHub Repo</a></p>
       </div>
-      <div class='column'>
-        <img src='dist/imgs/projectImgs/thumbnails/metroInfo.png' alt="Metro Info Thumbnail">
-        <div onclick="openModal();currentSlide(8)" class="overlay">
-            <div class="text">Ajax Project - Metro Info
-                              <br>
-                              (Click For More...)</div>
-          </div>
+    </div>
+    <div class="card">
+      <div class="project-image-thumbnail templateOne">
+       <div onclick="openModal();currentSlide(2)" class="overlay">
+        <div class="text">(Click to Enlarge...)</div>
       </div>
-      <div class='column'>
-        <img src='dist/imgs/projectImgs/thumbnails/svgProject.png' alt="SVG Project Thumbnail">
-        <div onclick="openModal();currentSlide(9)" class="overlay">
-            <div class="text">SVG Images Project
-                              <br>
-                              (Click For More...)</div>
-          </div>
       </div>
-		</div>
-		
-		<div id='myModal' class='modal'>
-			<span class="close cursor" onclick="closeModal()">&times;</span>
-      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-			<div class="modal-content">
-				<div class="mySlides">
-        			<img class="demo" src="dist/imgs/projectImgs/modalPostDiskus.png" alt="<h3>Post Diskus</h3><a href='https://j-v-r.github.io/postDiskus/'>View Live</a><br><a href='https://github.com/j-v-r/postDiskus'>View Repository</a><p>Date: 2017</p><p>This is a project I built myself. Post Diskus is a simple mockup of a blogging application built using jQuery. It allows users to submit post and comment on post.</p>" style="width:100%">
-    			</div>
-          <div class="mySlides">
-              <img class="demo" src="dist/imgs/projectImgs/modalCafeTemplate.png" alt="<h3>One Page Template</h3><a href='http://johnr-webdev.com/Cafe-Template-1/'>View Live</a><br><a href='https://github.com/j-v-r/Cafe-Template-1'>View Repository</a><p>Date: 2017</p><p>This is a project I built myself. This is a one page website for a imaginary cafe. This project demonstrates my expertise in responsive web design, HTML, and CSS/Scss.</p>" style="width:100%">
-          </div>
-    			<div class="mySlides">
-        			<img class="demo" src="dist/imgs/projectImgs/modalDashboard.png" alt="<h3>Web Application Dashboard Mockup</h3><a href='https://j-v-r.github.io/treehouseProject9/'>View Live</a><br><a href='https://github.com/j-v-r/treehouseProject9'>View Repository</a><p>Date: April 2017</p><p>Curriculum: <a href='https://teamtreehouse.com/home'>Team Treehouse</a></p><p>This project is a mockup of a interactive web app dashboard. It was built using SVG graphics, Javascript Programming, charts.js and Sass.</p>" style="width:100%">
-    			</div>
+      <div class="wrapper">
+        <h3>Single Page Template #1</h3>
+        <p>This project is a single page template I developed. The project was made using HTML, Sass, and with responsive web design principals. The banner images adjust according to screen size, optimizing performance on mobile devices.</p>
+        <p><a href="https://j-v-r.github.io/Cafe-Template-1/" target="_blank">View Live</a></p>
+        <p><a href="https://github.com/j-v-r/Cafe-Template-1" target="_blank">View GitHub Repo</a></p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="project-image-thumbnail dashboard">
+       <div onclick="openModal();currentSlide(3)" class="overlay">
+        <div class="text">(Click to Enlarge...)</div>
+      </div>
+      </div>
+      <div class="wrapper">
+        <h3>Mock Application Dashboard</h3>
+        <p>This project is a mock up of a interactive web app dashboard. It was built using SVG graphics, JavaScript Programming, charts.js and Sass.</p>
+        <p><a href="https://j-v-r.github.io/treehouseProject9/" target="_blank">View Live</a></p>
+        <p><a href="https://github.com/j-v-r/treehouseProject9" target="_blank">View GitHub Repo</a></p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="project-image-thumbnail openLibrary">
+       <div onclick="openModal();currentSlide(4)" class="overlay">
+        <div class="text">(Click to Enlarge...)</div>
+      </div>
+      </div>
+      <div class="wrapper">
+        <h3>Open Library Ajax Project</h3>
+        <p>This project was built using Ajax technology. There is a main page displaying books. A user clicks on a book a modal window appears displaying info from Open Libraries. Another page allows users to search for books via ISBN numbers. Project uses Open Library API.</p>
+        <p><a href="https://j-v-r.github.io/treehouseProject10/" target="_blank">View Live</a></p>
+        <p><a href="https://github.com/j-v-r/treehouseProject10" target="_blank">View GitHub Repo</a></p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="project-image-thumbnail mediaElementJS">
+       <div onclick="openModal();currentSlide(5)" class="overlay">
+        <div class="text">(Click to Enlarge...)</div>
+      </div>
+      </div>
+      <div class="wrapper">
+        <h3>MediaElement.js Project</h3>
+        <p>In this project I built a HTML5 video player. There is also an interactive transcript which will highlight the current section of the video and allow users to skip to video sections via clicking on the transcript. The project was built using JavaScript, the HTML5 Video API, and MediaElement.js.</p>
+        <p><a href="https://j-v-r.github.io/treehouseProject7/" target="_blank">View Live</a></p>
+        <p><a href="https://github.com/j-v-r/treehouseProject7" target="_blank">View GitHub Repo</a></p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="project-image-thumbnail optimization">
+       <div onclick="openModal();currentSlide(6)" class="overlay">
+        <div class="text">(Click to Enlarge...)</div>
+      </div>
+      </div>
+      <div class="wrapper">
+        <h3>Website Optimization Project</h3>
+        <p>In this project I had to put my understanding of website optimization to the test. I was given a poorly optimized set of files for a website. I made the site more ready for production by pruning the HTML, optimizing font use, and preventing blocking scripts. I also used Gulp.js to reduce image sizes, as well as to concat and minify JavaScript and CSS files.</p>
+        <p><a href="https://j-v-r.github.io/treehouseProject11/" target="_blank">View Live</a></p>
+        <p><a href="https://github.com/j-v-r/treehouseProject11" target="_blank">View GitHub Repo</a></p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="project-image-thumbnail metroInfoApp">
+       <div onclick="openModal();currentSlide(7)" class="overlay">
+        <div class="text">(Click to Enlarge...)</div>
+      </div>
+      </div>
+      <div class="wrapper">
+        <h3>Metro Info App</h3>
+        <p>This project is a work in progress. The project demonstrates my ability to use Ajax technology with thrid party APIs to develop web applications. In this project users can browse information from 5 different US cities. When a city button is clicked three widgets will display current weather, traffic conditions, and Flickr photos. This project uses the jQuery and Leaflet.js JavaScript libraries. The 3rd party APIs used are Weather Underground, MapBox, and Flickr.</p>
+        <p><a href="https://j-v-r.github.io/cityInfoApp/" target="_blank">View Live</a></p>
+        <p><a href="https://github.com/j-v-r/cityInfoApp" target="_blank">View GitHub Repo</a></p>
+      </div>
+    </div>
+  </div>
 
-    			<div class="mySlides">
-        			<img class="demo" src="dist/imgs/projectImgs/modalAjaxOpenLibrary.png" alt="<h3>Open Library Ajax Project</h3><a href='https://j-v-r.github.io/treehouseProject10/'>View Live</a><br><a href='https://github.com/j-v-r/treehouseProject10'>View Repository</a><p>Date: April 2017</p><p>Curriculum: <a href='https://teamtreehouse.com/home'>Team Treehouse</a></p><p>This project was built using Ajax technology. There is a main page displaying books. When a user clicks on a book a modal window appears displaying info from Open Libraries. Another page allows users to search for books via ISBN numbers. Project uses Open Library API.</p>" style="width:100%">
-    			</div>
-    			<div class="mySlides">
-        			<img class="demo" src="dist/imgs/projectImgs/modalAccessibility.png" alt="<h3>Accessibility Project</h3><a href='https://j-v-r.github.io/treehouseProject8/index'>View live</a><br><a href='https://github.com/j-v-r/treehouseProject8'>View Repository</a><p>Date: March 2017</p><p>Curriculum: <a href='https://teamtreehouse.com/home'>Team Treehouse</a></p><p>For this project I modified a website and made it more accessibile using web development best practices. This process required design skills, understanding of DOM structure, optimization of images, links, a HTML table, and an HTML form</p>" style="width:100%">
-    			</div>
-          <div class="mySlides">
-              <img class="demo" src="dist/imgs/projectImgs/modalMediaElementjs.png" alt="<h3>MediaElement.js Project</h3><a href='https://j-v-r.github.io/treehouseProject7/index'>View Live</a><br><a href='https://github.com/j-v-r/treehouseProject7'>View Repository</a><p>Date: February 2017</p><p>Curriculum: <a href='https://teamtreehouse.com/home'>Team Treehouse</a></p><p>In this project I built a HTML5 video player. There is also an interactive transcript which will highlight the current section of the video and allow users to skip to video sections via clicking on the transcript. The project was built using JavaScript, the HTML5 Video API, and MediaElement.js</p>" style="width:100%">
-          </div>
-           <div class="mySlides">
-              <img class="demo" src="dist/imgs/projectImgs/modalOptimization.png" alt="<h3>Optimization Project</h3><a href='https://j-v-r.github.io/treehouseProject11/index'>View Live</a><br><a href='https://github.com/j-v-r/treehouseProject11'>View Repository</a><p>Date: May 2017</p><p>Curriculum: <a href='https://teamtreehouse.com/home'>Team Treehouse</a></p><p>In this project I had to put my understanding of website optimization to the test. I was given a poorly optimized set of files for a website. I made the site more ready for production by pruning the HTML, optimizing font use, and preventing blocking scripts. I also used Gulp.js to reduce image sizes, as well as to concat and minify JavaScript and CSS files</p>" style="width:100%">
-          </div>
-           <div class="mySlides">
-              <img class="demo" src="dist/imgs/projectImgs/modalMetroInfo.png" alt="<h3>Ajax Project - Metro Info</h3><a href='https://j-v-r.github.io/cityInfoApp/'>View Live</a><br><a href='https://github.com/j-v-r/cityInfoApp'>View Repository</a><p>Date: 2017</p><p>This is a project I developed on my own. The project uses Leaflet.js to display the map. Project is a work in progress. The project demonstrates my ability to use ajax technology with thrid party APIs to develop web applications. In this project users can browse information from 5 different US cities. When a city button is clicked three widgets will display current weather, traffic conditions, and Flickr photos. The 3rd party APIs used are Weather Underground, MapBox, and Flickr.</p>" style="width:100%">
-          </div>
-          <div class="mySlides">
-              <img class="demo" src="dist/imgs/projectImgs/modalSvgProject.png" alt="<h3>SVG Images Project</h3><a href='https://j-v-r.github.io/treehouseProject6/'>View Live</a><br><a href='https://github.com/j-v-r/treehouseProject6'>View Repository</a><p>Date: February 2017</p><p>Curriculum: <a href='https://teamtreehouse.com/home'>Team Treehouse</a></p><p>This project demonstrates my knowledge of SVG images and how to use them in web development. In this project I was given a website and all of the images used were in a PNG format. I optimized the website by changing the image formats to SVG and inlining the SVG elements where it made sense.</p>" style="width:100%">
-          </div>
-			</div>
-			<a class="next" onclick="plusSlides(1)">&#10095;</a>
-			<div class="caption-container">
-      			<p id="caption"></p>
-    		</div>
-		</div>
-	</div>
+  <div id='myModal' class='modal'>
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+      <div class="modal-content">
+        <div class="mySlides">
+              <img class="demo" src="dist/imgs/projectImgs/modalPostDiskus.png" alt="Large Image of Post Diskus">
+        </div>
+      </div>
+      <div class="mySlides">
+              <img class="demo" src="dist/imgs/projectImgs/modalCafeTemplate.png" alt="Large Image of Single Page Template #1">
+      </div>
+      <div class="mySlides">
+              <img class="demo" src="dist/imgs/projectImgs/modalDashboard.png" alt="Large Image of mock application dashboard.">
+      </div>
+      <div class="mySlides">
+              <img class="demo" src="dist/imgs/projectImgs/modalAjaxOpenLibrary.png" alt="Large Image of Open Library Ajax Project">
+      </div>
+      <div class="mySlides">
+              <img class="demo" src="dist/imgs/projectImgs/modalMediaElementjs.png" alt="Large Image of MediaElement.js project.">
+      </div>
+      <div class="mySlides">
+              <img class="demo" src="dist/imgs/projectImgs/modalOptimization.png" alt="Large Image of MediaElement.js project.">
+      </div>
+      <div class="mySlides">
+              <img class="demo" src="dist/imgs/projectImgs/modalMetroInfo.png" alt="Large Image of MediaElement.js project.">
+      </div>
+    </div>
+  </div>
 </section>
 <footer>
 	<div>
@@ -206,9 +212,9 @@ function closeModal() {
 var slideIndex = 1;
 showSlides(slideIndex);
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
+// function plusSlides(n) {
+//   showSlides(slideIndex += n);
+// }
 
 function currentSlide(n) {
   showSlides(slideIndex = n);
@@ -218,7 +224,6 @@ function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("mySlides");
   var dots = document.getElementsByClassName("demo");
-  var captionText = document.getElementById("caption");
   if (n > slides.length) {slideIndex = 1}
   if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
@@ -229,7 +234,6 @@ function showSlides(n) {
   }
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
-  captionText.innerHTML = dots[slideIndex-1].alt;
 }
 </script>
 </body>
