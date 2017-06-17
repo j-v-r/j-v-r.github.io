@@ -23,75 +23,20 @@ section {
 	}
 }
 
-section#index,
-div#contact {
-	display: flex;
-	flex-direction: column;
-	font-size: 1.5rem;
-
-	@media screen and (min-width:600px) {
-		padding-top: 1rem;
-		flex-direction: row;
-		justify-content: space-around;
-	}
-	
-	div {
-		text-align: center;
-		&:hover > a{
-			color: #0375B4;
-			@media screen and (min-width: 450px) {
-				transform: scale(1.1);
-				} 
-			}
-
-		a {
-			text-decoration: none;
-			cursor: pointer;
-			color: #262228;
-			display: block;
-			transition: .5s;	
-
-		 	svg {
-		 		display: inline;
-		 		height: 90px;
-		 		width: 90px;
-		 		margin: auto;
-		 		padding: 1rem;
-		 		cursor: pointer;
-		 		color: white;
-
-		 		@media screen and (min-width:700px) {
-					height: 200px;
-		 			width: 200px;
-		 			padding: 2rem;
-				}
-		 	}
-		}
-	}
-}
-
-section#index {
-	div {
-		a {
-			color: #262228;
-		}
-	}
-}
-
-div#scrollForMore {
+div.scrollForMore {
 	width: 100%;
-    padding-bottom: 1rem;
+    padding: 2rem 0;
     text-align: center;
-	div#circle {
+	div.circle {
 		width: 50px;
 	    height: 50px;
 	    text-align: center;
 	    display: block;
 	    margin: 0 auto;
-	    border: 5px solid #0375B4;
+	    border: 5px solid $background-color;
 	    border-radius: 50%;
-		div#arrow {
-			border: solid #0375B4;
+		div.arrow {
+			border: solid $background-color;
 		    border-width: 0 5px 5px 0;
 		    display: inline-block;
 		    padding: 8px;

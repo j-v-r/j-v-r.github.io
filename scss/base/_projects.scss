@@ -48,7 +48,7 @@ div.gallery {
 				margin: .5rem auto;
 				font-family: 'Bad Script', cursive;
 				font-size: 1.5rem;
-				color: #007849;
+				color: $secondary-text-color;
 			}
 
 			p {
@@ -79,7 +79,7 @@ div.overlay {
 
 div.text {
   white-space: nowrap; 
-  color: #007849;
+  color: $secondary-text-color;
   font-size: 20px;
   position: absolute;
   overflow: hidden;
@@ -148,17 +148,3 @@ div#myModal {
 .active {
   opacity: 1;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-

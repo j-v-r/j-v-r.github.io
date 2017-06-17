@@ -19,58 +19,11 @@ section {
     display: inline-block;
     color: #262228; }
 
-section#index,
-div#contact {
-  display: flex;
-  flex-direction: column;
-  font-size: 1.5rem; }
-  @media screen and (min-width: 600px) {
-    section#index,
-    div#contact {
-      padding-top: 1rem;
-      flex-direction: row;
-      justify-content: space-around; } }
-  section#index div,
-  div#contact div {
-    text-align: center; }
-    section#index div:hover > a,
-    div#contact div:hover > a {
-      color: #0375B4; }
-      @media screen and (min-width: 450px) {
-        section#index div:hover > a,
-        div#contact div:hover > a {
-          transform: scale(1.1); } }
-    section#index div a,
-    div#contact div a {
-      text-decoration: none;
-      cursor: pointer;
-      color: #262228;
-      display: block;
-      transition: .5s; }
-      section#index div a svg,
-      div#contact div a svg {
-        display: inline;
-        height: 90px;
-        width: 90px;
-        margin: auto;
-        padding: 1rem;
-        cursor: pointer;
-        color: white; }
-        @media screen and (min-width: 700px) {
-          section#index div a svg,
-          div#contact div a svg {
-            height: 200px;
-            width: 200px;
-            padding: 2rem; } }
-
-section#index div a {
-  color: #262228; }
-
-div#scrollForMore {
+div.scrollForMore {
   width: 100%;
-  padding-bottom: 1rem;
+  padding: 2rem 0;
   text-align: center; }
-  div#scrollForMore div#circle {
+  div.scrollForMore div.circle {
     width: 50px;
     height: 50px;
     text-align: center;
@@ -78,7 +31,7 @@ div#scrollForMore {
     margin: 0 auto;
     border: 5px solid #0375B4;
     border-radius: 50%; }
-    div#scrollForMore div#circle div#arrow {
+    div.scrollForMore div.circle div.arrow {
       border: solid #0375B4;
       border-width: 0 5px 5px 0;
       display: inline-block;
@@ -86,19 +39,22 @@ div#scrollForMore {
       transform: rotate(45deg);
       margin-top: 10px; }
 
-@impott 'slideshow.scss';
 footer {
   width: 100%;
   background-color: #0375B4;
   font-size: 4px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between; }
+  justify-content: space-between;
+  padding-bottom: 1rem; }
   footer p:first-child {
     padding: .5rem;
     font-size: 1rem;
     font-family: 'Bad Script', cursive;
-    color: #FFCE00; }
+    color: #ffce00; }
+    @media screen and (min-width: 400px) {
+      footer p:first-child {
+        font-size: 1.25rem; } }
   footer div {
     margin-left: .25rem;
     color: white; }
@@ -130,46 +86,30 @@ footer {
           height: 75px;
           width: 75px; } }
 
-header#indexHeader {
-  margin: 0 auto; }
-  header#indexHeader div {
-    width: 80%;
-    margin: 0 auto; }
+header {
+  width: 100%;
+  background-color: #0375B4;
+  color: #ffce00; }
+  header div {
+    text-align: center;
+    margin: 0 auto;
+    width: 70%; }
     @media screen and (min-width: 600px) {
-      header#indexHeader div {
+      header div {
         width: 50%; } }
-    header#indexHeader div h1 {
+    header div.headerBorder {
+      border-top: 2px solid white; }
+    header div h1 {
       text-align: center;
       font-size: 2rem;
       font-family: 'Bad Script', cursive;
       padding: 1rem; }
       @media screen and (min-width: 600px) {
-        header#indexHeader div h1 {
+        header div h1 {
           padding: 1.5rem;
           font-size: 3rem; } }
 
-header {
-  width: 100%;
-  background-color: #0375B4; }
-  header div {
-    text-align: center; }
-    header div h1.smallTitle {
-      font-family: 'Bad Script', cursive;
-      font-size: 1.25rem;
-      padding: 1rem 0; }
-    header div.headerBorder {
-      border-top: 2px solid white; }
-    header div:not(.topnav) {
-      color: #FFCE00;
-      margin: 0 auto;
-      width: 300px; }
-      @media screen and (min-width: 600px) {
-        header div:not(.topnav) {
-          margin: 0rem 1rem; } }
-
-section#about {
-  display: block;
-  flex-direction: none;
+section.about {
   padding: 1rem; }
 
 div.container {
@@ -191,69 +131,28 @@ div.container {
       @media screen and (min-width: 600px) {
         div.container p a {
           font-size: 1.5rem; } }
-  div.container div#photo {
-    padding: 1rem; }
-    div.container div#photo img {
+  div.container div.photo {
+    padding: 1rem;
+    text-align: center; }
+    div.container div.photo img {
       filter: brightness(80%);
       filter: contrast(80%);
       border: 2px solid #0375B4;
       border-radius: 40%;
       width: 100%;
-      max-width: 300px; }
+      max-width: 170px; }
       @media screen and (min-width: 600px) {
-        div.container div#photo img {
-          width: 300px;
+        div.container div.photo img {
           margin-right: 2rem; } }
 
-div#content {
+div.content {
   display: flex;
-  flex-direction: column; }
-  @media screen and (min-width: 600px) {
-    div#content {
-      flex-direction: row;
-      justify-content: center;
-      width: 90%;
+  flex-direction: column;
+  justify-content: center; }
+  @media screen and (min-width: 700px) {
+    div.content {
+      width: 70%;
       margin: auto; } }
-
-div.topnav {
-  background-color: #262228;
-  overflow: hidden;
-  padding: 0;
-  min-width: 100%; }
-  div.topnav a {
-    float: left;
-    display: block;
-    color: #FFCE00;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    cursor: pointer; }
-    div.topnav a:hover {
-      background-color: #ddd;
-      color: black; }
-    div.topnav a:not(:first-child) {
-      display: none; }
-      @media screen and (min-width: 600px) {
-        div.topnav a:not(:first-child) {
-          display: block; } }
-    div.topnav a.icon {
-      float: right;
-      display: block; }
-      @media screen and (min-width: 600px) {
-        div.topnav a.icon {
-          display: none; } }
-
-div.responsive {
-  position: relative; }
-  div.responsive a.icon {
-    position: absolute;
-    right: 0;
-    top: 0; }
-  div.responsive a {
-    float: none;
-    display: block !important;
-    text-align: left; }
 
 div.gallery {
   width: 100%;
