@@ -114,7 +114,7 @@ section.about {
 
 div.container {
   line-height: 2rem;
-  text-align: justify; }
+  text-align: center; }
   div.container h2 {
     font-size: 1.5rem;
     font-family: 'Bad Script', cursive;
@@ -141,9 +141,6 @@ div.container {
       border-radius: 40%;
       width: 100%;
       max-width: 170px; }
-      @media screen and (min-width: 600px) {
-        div.container div.photo img {
-          margin-right: 2rem; } }
 
 div.content {
   display: flex;
